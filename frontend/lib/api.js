@@ -4,7 +4,7 @@ export function getStrapiURL(path = "") {
   }${path}`;
 }
 
-// Helper to make GET requests to Strapi
+// Helper to make GET requests to Strapi API
 export async function fetchAPI(path) {
   const requestUrl = getStrapiURL(path);
   const response = await fetch(requestUrl);

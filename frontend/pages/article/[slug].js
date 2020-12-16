@@ -19,17 +19,11 @@ const Article = ({ article, categories }) => {
   return (
     <Layout categories={categories}>
       <Seo seo={seo} />
-      <div
-        id="banner"
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-        data-src={imageUrl}
-        data-srcset={imageUrl}
-        data-uk-img
-      >
-        <h1>{article.title}</h1>
-      </div>
+      
       <div className="uk-section">
+      
         <div className="uk-container uk-container-small">
+        <div>{article.title}</div>
           <ReactMarkdown source={article.content} escapeHtml={false} />
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
